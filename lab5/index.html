@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="utf-8">
+	<title>James Adler - Lab 5</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		Lab 5 - Twitter JSON File Generator
+	</header>
+	<div class="container" ng-app="TwitterFeed" ng-controller="TwitterCtrl">
+
+		<label for="numTweets">Number of Tweets:</label>
+		<input type="number" ng-model="numberTweets">
+
+		<input type="button" id="pullData" value="Pull Tweet Data" ng-click="getTweets()"/>
+
+		<ul id="twitterFeed"></ul>
+
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+	<script type="text/javascript" src="./jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="./main.js"></script>
+
+</body>
+</html>

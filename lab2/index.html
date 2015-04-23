@@ -1,0 +1,71 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>James Adler's Weather Feed</title>
+	
+	<script type="text/javascript" src="./jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="./weather.js"></script>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+
+  
+</head>
+
+<body>
+	<header><h1>James Adler's Weather Forecast</h1></header>
+
+	<div id="weatherData" class="jumbotron">
+    <div class="container">
+      <span id="loading">Loading weather data...</span>
+
+      <div class="col-md-12">
+        <h3 id="currentWeather">
+          The current weather for <u id="city"></u> is <span id="currentTemp"></span>&deg;F and 
+          <span id="weatherType"></span><span id="weatherIcon"></span>
+        </h3>
+
+        <div class="row" id="moreWeather">
+          <div class="col-md-4">
+            Sunrise: <span id="sunrise"></span>
+            <br/>
+            Sunset: <span id="sunset"></span>
+          </div>
+          <div class="col-md-4">&nbsp;</div>
+          <div class="col-md-4">
+            Wind: <span id="wind"></span>
+            <br/>
+            For detailed info <a href="http://openweathermap.org/city/" id="moreInfo">Click here</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+	</div>
+
+  <label for="weatherBG" id="weatherBG_lbl">Change Background:</label>
+  <select id="weatherBG">
+    <option value="01">Clear Sky</option>
+    <option value="02">Cloudy Sky</option>
+    <option value="09">Raining</option>
+    <option value="11">Thunder</option>
+    <option value="13">Snowing</option>
+    <option value="50">Mist</option>
+    <option value="99">Other</option>
+  </select>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

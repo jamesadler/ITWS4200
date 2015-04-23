@@ -1,0 +1,79 @@
+html {
+	background: url("./small-clouds.jpeg");
+	background-repeat: repeat;
+}
+
+header {
+	text-align: center;
+}
+
+.tweet {
+	border: 3px solid white;
+	text-align: left;
+	min-height: 60px;
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	list-style-image: url(./Twitter_logo_blue.png);
+	position: relative;
+	padding: 10px;
+	background-color: #001D33;
+}
+
+.hashtag {
+	border: 3px solid black;
+	text-align: left;
+	min-height: 60px;
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	list-style: none;
+	position: relative;
+	padding: 10px;
+	background-color: #62ADDE;
+}
+
+.profile_pic {
+	width: 60px;
+	height: 60px;
+	-moz-border-radius: 150px;
+    -webkit-border-radius: 150px;
+    border-radius: 150px;
+}
+
+.author {
+	display: block;
+	padding-left: 60px;
+}
+
+#twitterFeed, #hashtagFeed {
+	display: inline-block;
+}
+
+
+#twitterFeed {
+	min-width: 900px;
+}
+
+
+@media screen and (max-width:960px) {
+	#twitterFeed {
+		min-width: 500px;
+		width: 90%;
+	}
+
+	#hashtagFeed {
+		width: 90%;
+		min-width: 480px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#twitterFeed{
+		display: inline;
+		width: 100%;
+	}
+
+	#hashtagFeed {
+		display: inline;
+		width: 100%;
+	}
+}
