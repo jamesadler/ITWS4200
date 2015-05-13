@@ -1,0 +1,14 @@
+header {
+	text-align: center;
+	font-size: 20pt;
+	font-weight: bold;
+}
+
+html {
+	background: url("./small-clouds.jpeg");
+	background-repeat: repeat;
+}
+
+#output {
+	background-color: white;
+}

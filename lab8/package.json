@@ -1,0 +1,17 @@
+{
+  "name": "lab8",
+  "version": "1.0.0",
+  "description": "Lab 8 - SPARQL and RDF",
+  "main": "main.js",
+  "dependencies": {
+    "body-parser": "^1.12.3",
+    "express": "^4.12.2",
+    "sparql-client": "^0.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "James Adler",
+  "license": "ISC"
+}
